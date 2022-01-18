@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (width: 375) {
+    body {
+        background: url('../images/pattern-background-mobile.svg') no-repeat hsl(225, 100%, 98%);
+        background-size: cover;
+    }
+}
+
+body {
+    background: url('../images/pattern-background-desktop.svg') no-repeat hsl(225, 100%, 98%);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 14px;
+}
+
+.order-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0px 12px 25px 0px rgba(0, 0, 0, 0.205);
+}
+
+.order-card .img-header {
+    border-radius: 12px;
+}
+
+.order-card .img-header img {
+    border-radius: 12px 12px 0 0;
+    width: 350px;
+}
+
+.order-card .title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    padding: 30px 30px 15px 30px;
+}
+
+.order-card .description {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    text-align: center;
+    padding: 0 15px 20px 15px;
+}
+
+.order-card .plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 10px 20px 10px;
+    width: 70%;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.order-card .plan .choice .name {
+    font-weight: 700;
+}
+
+.order-card .plan .choice .price {
+    color: hsl(224, 23%, 55%);
+}
+
+.order-card .plan .change {
+    position: relative;
+    left: 22%;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+.order-card .plan .change:hover {
+    color: rgba(118,108,241,255);
+    text-decoration: none;
+}
+
+.order-card .plan img {
+    transform: scale(70%);
+    margin-right: 8px;
+}
+
+.order-card .pay {
+    background-color: hsl(245, 75%, 52%);
+    width: 72%;
+    margin: 0 8px 25px 8px;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 12px 25px 0px rgba(0, 0, 0, 0.205);
+    text-align: center;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.order-card .pay:hover {
+    background-color: rgba(118,108,241,255);
+
+}
+
+.order-card .cancel {
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 35px;
+    font-weight: 700;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.order-card .cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
